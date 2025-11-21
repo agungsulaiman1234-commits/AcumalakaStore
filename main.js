@@ -227,6 +227,7 @@ if (savedMusic) {
     { nama: 'Ragnarok M', img: 'assets/game/rom.png', id: 'rom' },
     { nama: 'Tower of Fantasy', img: 'assets/game/tof.png', id: 'tof' },
     { nama: 'Zepeto', img: 'assets/game/zepeto.png', id: 'zepeto' },
+    { nama: 'Super Sus', img: 'assets/game/supersus.png', id: 'supersus' },
     { nama: 'Life After', img: 'assets/game/lifeafter.png', id: 'lifeafter' },
     { nama: 'Lords Mobile', img: 'assets/game/lordsmobile.png', id: 'lordsmobile' },
     { nama: 'State of Survival', img: 'assets/game/sos.png', id: 'sos' },
