@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Transaksi - AcumalakaStore</title>
+    <link rel="stylesheet" href="mentahan.css">
+    <link rel="stylesheet" href="pages.css">
+    <script defer src="mentahan.js"></script>
+    <script defer src="pages.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="menu-btn" id="menuBtn">☰</div>
+
+    <nav id="sidebar">
+        <button id="closeSidebar">✕</button>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+            <li><a href="promo acara.html">Promo & Acara</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-logo">
+        <span class="logo-acumalaka">Acumalaka</span><span class="logo-store">Store</span>
+    </div>
+    
+    <div class="header-right">
+        <div class="icon search" id="searchIcon"><img src="assets/icons/search.png" alt="search"></div>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Cari Game atau Voucher">
+        <div class="icon disk" id="musicIcon"><img src="assets/icons/disk.png" alt="music"></div>
+        <div class="icon user" id="userIcon"><img src="assets/icons/user.png" alt="user"></div>
+    </div>
+</header>
+
+<main class="page-container">
+    <section class="page-header">
+        <h1>Daftar Transaksi</h1>
+        <p>Lacak dan kelola semua transaksi Anda di sini</p>
+    </section>
+
+    <section class="transaction-search">
+        <div class="search-box">
+            <input type="text" id="searchTransaction" placeholder="Masukkan ID Transaksi atau Email...">
+            <button id="btnSearchTransaction">Cari</button>
+        </div>
+    </section>
+
+    <section class="transaction-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="success">Sukses</button>
+        <button class="filter-btn" data-filter="failed">Gagal</button>
+    </section>
+
+    <section class="transaction-list" id="transactionList">
+        <div class="empty-state">
+            <img src="assets/icons/empty.png" alt="Kosong" onerror="this.style.display='none'">
+            <h3>Belum Ada Transaksi</h3>
+            <p>Transaksi Anda akan muncul di sini setelah melakukan pembelian</p>
+            <a href="index.html" class="btn-primary">Mulai Belanja</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <!-- Kolom 1: Logo + deskripsi -->
+    <div class="footer-col">
+      <img src="assets/logo-footer.png" alt="AcumalakaStore Logo" height="50" class="footer-logo">
+      <p>
+        AcumalakaStore adalah platform tepercaya untuk kebutuhan top-up dan pembelian voucher digital berbagai game favorit. Nikmati kemudahan transaksi, dukungan pelanggan responsif, serta promo menarik setiap hari.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Peta Situs -->
+    <div class="footer-col">
+      <h4>PETA SITUS</h4>
+      <ul>
+        <li><a href="#">Masuk</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#categories">Semua Game</a></li>
+        <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Top Up Lainnya -->
+    <div class="footer-col">
+      <h4>TOP UP LAINNYA</h4>
+      <ul>
+        <li><a href="topup.html?game=ml">Mobile Legends</a></li>
+        <li><a href="topup.html?game=ff">Free Fire</a></li>
+        <li><a href="topup.html?game=pubg">Pubg Mobile</a></li>
+        <li><a href="topup.html?game=roblox">Roblox</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Ikuti Kami + Bantuan -->
+    <div class="footer-col">
+      <h4>IKUTI KAMI</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/agung_sulaiman1648/"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://discord.gg/FD4K4Gw3HT"><img src="assets/icons/discord.png" alt="Discord"></a>
+        <a href="https://www.youtube.com/@ZemonQu03"><img src="assets/icons/youtube.png" alt="Youtube"></a>
+      </div>
+      <h4>BANTUAN PELANGGAN</h4>
+      <a href="https://wa.me/6283837213836" target="_blank" class="btn-contact">
+      Hubungi Kami
+    </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AcumalakaStore. Hak Cipta &nbsp; <a href="about.html">Tentang Kami</a> | <a href="kebijakan.html">Syarat & Ketentuan Pengguna</a></p>
+  </div>
+</footer>
+
+<!-- Popup Music -->
+<div id="musicPopup" class="popup">
+  <h3 class="popup-title">Pemutar Musik</h3>
+
+  <div class="popup-section">
+    <label for="defaultMusicSelect">Pilih Musik</label>
+    <select id="defaultMusicSelect" class="popup-select">
+      <option value="assets/music/default1.mp3">Chill Vibes</option>
+      <option value="assets/music/default2.mp3">Action Mode</option>
+      <option value="assets/music/default3.mp3">Relax Beats</option>
+    </select>
+  </div>
+  <div class="music-controls">
+    <button id="playBtn" class="music-btn" title="Putar">
+      <i data-lucide="play"></i>
+    </button>
+    <button id="stopBtn" class="music-btn" title="Hentikan">
+      <i data-lucide="square"></i>
+    </button>
+  </div>
+
+  <audio id="bgMusic" loop></audio>
+</div>
+
+<!-- Popup User -->
+<div id="userPopup" class="popup">
+    <div id="loginForm">
+        <h3>Masuk Akun</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="logoutSection" style="display: none;">
+        <p>Halo, <span id="userDisplay"></span></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+</div>
+
+</body>
+</html>

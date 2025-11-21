@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcumalakaStore</title>
+  <link rel="stylesheet" href="style topup.css">
+  <script defer src="script topup.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header>
+  <div class="menu-btn" id="menuBtn">☰</div>
+
+    <nav id="sidebar">
+        <button id="closeSidebar">✕</button>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+            <li><a href="promo & acara.html">Promo & Acara</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-logo">
+    <span class="logo-acumalaka">Acumalaka</span><span class="logo-store">Store</span>
+  </div>
+    
+    <div class="header-right">
+        <div class="icon search" id="searchIcon"><img src="assets/icons/search.png" alt="search"></div>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Cari Game atau Voucher">
+        <div class="icon disk" id="musicIcon"><img src="assets/icons/disk.png" alt="music"></div>
+        <div class="icon user" id="userIcon"><img src="assets/icons/user.png" alt="user"></div>
+    </div>
+</header>
+
+<div class="top-hero" id="top-hero"></div>
+<div class="hero-wrapper">
+  <div class="hero"></div>
+</div>
+
+<!-- HEADER GAME DINAMIS -->
+<div class="game-header" id="game-header">
+  <img src="" class="game-cover" id="gameCover">
+  <div class="game-info">
+    <h1 id="game-title">Top Up Game</h1>
+    <p id="game-subtitle"></p>
+  </div>
+</div>
+
+<main class="container-topup">
+
+  <!-- LEFT PANEL -->
+    <aside class="left-panel">
+    <div class="tutorial-box">
+      <h3>Tata Cara Topup</h3>
+      <ol>
+        <li>Masukkan User ID & Server.</li>
+        <li>Pilih nominal Diamond.</li>
+        <li>Pilih metode pembayaran.</li>
+        <li>Klik beli & lakukan pembayaran.</li>
+        <li>Diamond otomatis masuk ke akun.</li>
+      </ol>
+      <p class="warning">
+        Catatan: Paket global tidak bisa dipakai untuk akun server Indonesia.
+      </p>
+    </div>
+    
+    <div class="title"><span style="color:#ffb700;font-size:24px">★</span> Testimoni</div>
+    <div class="testimoni-box">
+      <!-- ULASAN -->
+<div class="review-box">
+
+  <h2 class="rev-title">⭐ Ulasan</h2>
+
+  <p class="rev-desc">
+    Pelanggan merasa puas dengan produk ini.<br>
+    Dari 2.55jt ulasan.
+  </p>
+
+  <div class="rev-header">
+
+    <div class="rev-score">
+      <div class="big-star">⭐</div>
+      <h1>4.99 <span>/ 5.0</span></h1>
+    </div>
+
+    <div class="rev-bars">
+
+      <div class="rev-row">
+        <span>5 ⭐</span>
+        <div class="bar"><div style="width:95%"></div></div>
+        <span>2.55jt</span>
+      </div>
+
+      <div class="rev-row">
+        <span>4 ⭐</span>
+        <div class="bar"><div style="width:20%"></div></div>
+        <span>889</span>
+      </div>
+
+      <div class="rev-row">
+        <span>3 ⭐</span>
+        <div class="bar"><div style="width:6%"></div></div>
+        <span>130</span>
+      </div>
+
+      <div class="rev-row">
+        <span>2 ⭐</span>
+        <div class="bar"><div style="width:2%"></div></div>
+        <span>64</span>
+      </div>
+
+      <div class="rev-row">
+        <span>1 ⭐</span>
+        <div class="bar"><div style="width:3%"></div></div>
+        <span>242</span>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="rev-question">
+    Apakah kamu menyukai produk ini? Beri tahu kami dan calon pembeli lainnya tentang pengalamanmu.
+  </p>
+
+</div>
+
+  <!-- Contoh List Review -->
+  <div class="rev-item">
+    <strong>08********36</strong> <span class="stars">⭐⭐⭐⭐⭐</span>
+    <p>"Damn langsung jago pake joy coy"</p>
+    <small>2025-11-18 23:04:31</small>
+  </div>
+
+  <hr>
+
+  <div class="rev-item">
+    <strong>08********89</strong> <span class="stars">⭐⭐⭐⭐⭐</span>
+    <p>"Kelas King"</p>
+    <small>2025-11-18 16:53:48</small>
+  </div>
+</div>
+  </aside>
+
+  <!-- RIGHT PANEL - PERBAIKAN ID -->
+  <section class="content" id="right-panel">
+    <!-- Form akan digenerate oleh JS -->
+  </section>
+</main>
+
+<!-- Kategori -->
+<section class="categories" id="categories">
+  <h2 class="layanan-lainnya">Layanan Lainnya</h2>
+    <div class="category">
+        <button class="cat-btn" data-cat="game">Game</button>
+        <button class="cat-btn" data-cat="joki">Joki</button>
+        <button class="cat-btn" data-cat="voucher">Voucher</button>
+        <button class="cat-btn" data-cat="pulsa">Pulsa</button>
+        <button class="cat-btn" data-cat="Streaming">Streaming</button>
+    </div>
+    <div id="category-content">
+        <p>Pilih salah satu kategori di atas untuk melihat daftar.</p>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <!-- Kolom 1: Logo + deskripsi -->
+    <div class="footer-col">
+      <img src="assets/logo-footer.png" alt="AcumalakaStore Logo" height="50" class="footer-logo">
+      <p>
+        AcumalakaStore adalah platform tepercaya untuk kebutuhan top-up dan pembelian voucher digital berbagai game favorit. Nikmati kemudahan transaksi, dukungan pelanggan responsif, serta promo menarik setiap hari.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Peta Situs -->
+    <div class="footer-col">
+      <h4>PETA SITUS</h4>
+      <ul>
+        <li><a href="#">Masuk</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#categories">Semua Game</a></li>
+        <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Top Up Lainnya -->
+    <div class="footer-col">
+      <h4>TOP UP LAINNYA</h4>
+      <ul>
+        <li><a href="topup.html?game=ml">Mobile Legends</a></li>
+        <li><a href="topup.html?game=ff">Free Fire</a></li>
+        <li><a href="topup.html?game=pubg">Pubg Mobile</a></li>
+        <li><a href="topup.html?game=roblox">Roblox</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Ikuti Kami + Bantuan -->
+    <div class="footer-col">
+      <h4>IKUTI KAMI</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/agung_sulaiman1648/"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://discord.gg/FD4K4Gw3HT"><img src="assets/icons/discord.png" alt="Discord"></a>
+        <a href="https://www.youtube.com/@ZemonQu03"><img src="assets/icons/youtube.png" alt="Youtube"></a>
+      </div>
+      <h4>BANTUAN PELANGGAN</h4>
+      <a href="https://wa.me/6283837213836" target="_blank" class="btn-contact">
+      Hubungi Kami
+    </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AcumalakaStore. Hak Cipta &nbsp; <a href="about.html">Tentang Kami</a> | <a href="#">Syarat & Ketentuan Pengguna</a></p>
+  </div>
+</footer>
+
+<!-- Popup Music & User -->
+<div id="musicPopup" class="popup">
+  <h3 class="popup-title">Pemutar Musik</h3>
+
+  <div class="popup-section">
+    <label for="defaultMusicSelect">Pilih Musik</label>
+    <select id="defaultMusicSelect" class="popup-select">
+      <option value="assets/music/default1.mp3">Chill Vibes</option>
+      <option value="assets/music/default2.mp3">Action Mode</option>
+      <option value="assets/music/default3.mp3">Relax Beats</option>
+    </select>
+  </div>
+  <div class="music-controls">
+    <button id="playBtn" class="music-btn" title="Putar">
+      <i data-lucide="play"></i>
+    </button>
+    <button id="stopBtn" class="music-btn" title="Hentikan">
+      <i data-lucide="square"></i>
+    </button>
+  </div>
+
+  <audio id="bgMusic" loop></audio>
+</div>
+
+<!-- Popup User -->
+<div id="userPopup" class="popup">
+    <div id="loginForm">
+        <h3>Masuk Akun</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="logoutSection" style="display: none;">
+        <p>Halo, <span id="userDisplay"></span></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+</div>
+
+<div id="topupPopup">
+  <h3>Pesanan Berhasil Dibuat!</h3>
+  <hr>
+  
+  <div class="popup-info">
+    <p><strong>Game:</strong> <span>Mobile Legends</span></p>
+    <p><strong>ID/Server:</strong> <span>123456789 (1234)</span></p>
+    <p><strong>Nominal:</strong> <span class="highlight">100 Diamond (Rp 25.000)</span></p>
+    <p><strong>Pembayaran:</strong> <span class="highlight">DANA</span></p>
+  </div>
+  
+  <p class="instruction">Silakan lakukan pembayaran sesuai instruksi yang diberikan</p>
+  
+  <button class="closePopup">Mengerti</button>
+</div>
+
+</html>

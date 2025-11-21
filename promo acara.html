@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo & Acara - AcumalakaStore</title>
+    <link rel="stylesheet" href="mentahan.css">
+    <link rel="stylesheet" href="pages.css">
+    <script defer src="mentahan.js"></script>
+    <script defer src="pages.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="menu-btn" id="menuBtn">☰</div>
+
+    <nav id="sidebar">
+        <button id="closeSidebar">✕</button>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+            <li><a href="promo acara.html">Promo & Acara</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-logo">
+        <span class="logo-acumalaka">Acumalaka</span><span class="logo-store">Store</span>
+    </div>
+    
+    <div class="header-right">
+        <div class="icon search" id="searchIcon"><img src="assets/icons/search.png" alt="search"></div>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Cari Game atau Voucher">
+        <div class="icon disk" id="musicIcon"><img src="assets/icons/disk.png" alt="music"></div>
+        <div class="icon user" id="userIcon"><img src="assets/icons/user.png" alt="user"></div>
+    </div>
+</header>
+
+<main class="page-container">
+    <section class="page-header">
+        <h1>Promo & Acara</h1>
+        <p>Jangan lewatkan penawaran menarik dan event spesial dari kami!</p>
+    </section>
+
+    <section class="promo-highlight">
+        <div class="highlight-card">
+            <div class="highlight-badge">HOT</div>
+            <div class="highlight-content">
+                <h2>🔥 FLASH SALE MINGGUAN</h2>
+                <p>Diskon hingga 50% untuk top-up game favorit!</p>
+                <div class="countdown" id="flashCountdown">
+                    <div class="time-box"><span id="days">00</span><small>Hari</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Jam</small></div>
+                    <div class="time-box"><span id="minutes">00</span><small>Menit</small></div>
+                    <div class="time-box"><span id="seconds">00</span><small>Detik</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-grid">
+        <h2 class="section-title">Promo Aktif</h2>
+        <div class="promo-cards">
+            <div class="promo-card">
+                <div class="promo-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <span class="discount-tag">20% OFF</span>
+                </div>
+                <div class="promo-info">
+                    <h3>Diskon Mobile Legends</h3>
+                    <p>Top-up diamond ML dengan diskon 20%</p>
+                    <span class="promo-period">Berlaku: 1 - 31 Jan 2025</span>
+                    <button class="btn-claim">Klaim Sekarang</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                    <span class="discount-tag">CASHBACK</span>
+                </div>
+                <div class="promo-info">
+                    <h3>Cashback Free Fire</h3>
+                    <p>Cashback 15% untuk pembelian pertama</p>
+                    <span class="promo-period">Berlaku: Setiap Hari</span>
+                    <button class="btn-claim">Klaim Sekarang</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                    <span class="discount-tag">BONUS</span>
+                </div>
+                <div class="promo-info">
+                    <h3>Bonus Voucher Google Play</h3>
+                    <p>Beli voucher 100rb dapat bonus 10rb</p>
+                    <span class="promo-period">Berlaku: Terbatas</span>
+                    <button class="btn-claim">Klaim Sekarang</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-img" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                    <span class="discount-tag">SPESIAL</span>
+                </div>
+                <div class="promo-info">
+                    <h3>Member Baru</h3>
+                    <p>Diskon 25% untuk transaksi pertama</p>
+                    <span class="promo-period">Berlaku: User Baru</span>
+                    <button class="btn-claim">Daftar Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <h2 class="section-title">Event Mendatang</h2>
+        <div class="event-list">
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">JAN</span>
+                </div>
+                <div class="event-info">
+                    <h4>Giveaway Diamond ML 10.000</h4>
+                    <p>Follow Instagram dan tag 3 teman untuk ikut giveaway!</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="day">14</span>
+                    <span class="month">FEB</span>
+                </div>
+                <div class="event-info">
+                    <h4>Valentine Special Sale</h4>
+                    <p>Diskon spesial hari kasih sayang untuk semua produk</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="day">01</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-info">
+                    <h4>Anniversary AcumalakaStore</h4>
+                    <p>Rayakan ulang tahun kami dengan promo besar-besaran!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <!-- Kolom 1: Logo + deskripsi -->
+    <div class="footer-col">
+      <img src="assets/logo-footer.png" alt="AcumalakaStore Logo" height="50" class="footer-logo">
+      <p>
+        AcumalakaStore adalah platform tepercaya untuk kebutuhan top-up dan pembelian voucher digital berbagai game favorit. Nikmati kemudahan transaksi, dukungan pelanggan responsif, serta promo menarik setiap hari.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Peta Situs -->
+    <div class="footer-col">
+      <h4>PETA SITUS</h4>
+      <ul>
+        <li><a href="#">Masuk</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#categories">Semua Game</a></li>
+        <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Top Up Lainnya -->
+    <div class="footer-col">
+      <h4>TOP UP LAINNYA</h4>
+      <ul>
+        <li><a href="topup.html?game=ml">Mobile Legends</a></li>
+        <li><a href="topup.html?game=ff">Free Fire</a></li>
+        <li><a href="topup.html?game=pubg">Pubg Mobile</a></li>
+        <li><a href="topup.html?game=roblox">Roblox</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Ikuti Kami + Bantuan -->
+    <div class="footer-col">
+      <h4>IKUTI KAMI</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/agung_sulaiman1648/"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://discord.gg/FD4K4Gw3HT"><img src="assets/icons/discord.png" alt="Discord"></a>
+        <a href="https://www.youtube.com/@ZemonQu03"><img src="assets/icons/youtube.png" alt="Youtube"></a>
+      </div>
+      <h4>BANTUAN PELANGGAN</h4>
+      <a href="https://wa.me/6283837213836" target="_blank" class="btn-contact">
+      Hubungi Kami
+    </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AcumalakaStore. Hak Cipta &nbsp; <a href="about.html">Tentang Kami</a> | <a href="kebijakan.html">Syarat & Ketentuan Pengguna</a></p>
+  </div>
+</footer>
+
+<!-- Popup Music -->
+<div id="musicPopup" class="popup">
+  <h3 class="popup-title">Pemutar Musik</h3>
+
+  <div class="popup-section">
+    <label for="defaultMusicSelect">Pilih Musik</label>
+    <select id="defaultMusicSelect" class="popup-select">
+      <option value="assets/music/default1.mp3">Chill Vibes</option>
+      <option value="assets/music/default2.mp3">Action Mode</option>
+      <option value="assets/music/default3.mp3">Relax Beats</option>
+    </select>
+  </div>
+  <div class="music-controls">
+    <button id="playBtn" class="music-btn" title="Putar">
+      <i data-lucide="play"></i>
+    </button>
+    <button id="stopBtn" class="music-btn" title="Hentikan">
+      <i data-lucide="square"></i>
+    </button>
+  </div>
+
+  <audio id="bgMusic" loop></audio>
+</div>
+
+<!-- Popup User -->
+<div id="userPopup" class="popup">
+    <div id="loginForm">
+        <h3>Masuk Akun</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="logoutSection" style="display: none;">
+        <p>Halo, <span id="userDisplay"></span></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+</div>
+
+</body>
+</html>

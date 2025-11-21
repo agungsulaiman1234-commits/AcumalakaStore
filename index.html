@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcumalakaStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+</head>
+<body>
+<header>
+    <div class="menu-btn" id="menuBtn">☰</div>
+
+    <nav id="sidebar">
+        <button id="closeSidebar">✕</button>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+            <li><a href="promo acara.html">Promo & Acara</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-logo">
+    <span class="logo-acumalaka">Acumalaka</span><span class="logo-store">Store</span>
+  </div>
+    
+    <div class="header-right">
+        <div class="icon search" id="searchIcon"><img src="assets/icons/search.png" alt="search"></div>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Cari Game atau Voucher">
+        <div class="icon disk" id="musicIcon"><img src="assets/icons/disk.png" alt="music"></div>
+        <div class="icon user" id="userIcon"><img src="assets/icons/user.png" alt="user"></div>
+    </div>
+</header>
+
+<!-- Overlay untuk pengumuman -->
+<div id="announcementOverlay" class="announcement-overlay"></div>
+
+<!-- Popup Pengumuman dengan Gambar -->
+<div id="announcementPopup" class="announcement-popup">
+  <button id="closeAnnouncement" class="announcement-close">&times;</button>
+  <h3 class="announcement-title">Pengumuman</h3>
+  <img src="assets/promo.png" alt="Promo" class="announcement-img">
+  <p>Selamat datang di AcumalakaStore! Jangan lupa cek promo terbaru kami.</p>
+  <div class="dont-show">
+  <input type="checkbox" id="dontShowToday">
+  <label for="dontShowToday">Jangan tampilkan lagi hari ini</label>
+</div>
+
+</div>
+
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1 class="welcome-text">Selamat Datang di AcumalakaStore</h1>
+        <p>Tempat Top Up Game, Joki, dan Voucher Terpercaya</p>
+        <button id="beliBtn">Beli Sekarang</button>
+    </div>
+</section>
+
+<section id="trending"><h2>🔥Trending Now🔥</h2>
+    <div class="trending-list">
+        <div class="card1-container">
+    <div class="card-game" data-game="ml">
+        <div class="game-icon"><img src="assets/game/ml.png" alt="Mobile Legends"></div>
+        <div class="game-info">
+            <p class="game-name">Mobile Legends</p>
+            <p class="game-publisher">Moonton</p>
+        </div>
+    </div>
+
+    <div class="card-game" data-game="genshin">
+        <div class="game-icon"><img src="assets/game/genshin.png" alt="Genshin Impact"></div>
+        <div class="game-info">
+            <p class="game-name">Genshin Impact</p>
+            <p class="game-publisher">miHoYo</p>
+        </div>
+    </div>
+
+    <div class="card-game" data-game="ff">
+        <div class="game-icon"><img src="assets/game/ff.png" alt="Free Fire"></div>
+        <div class="game-info">
+            <p class="game-name">Free Fire</p>
+            <p class="game-publisher">Garena</p>
+        </div>
+    </div>
+
+    <div class="card-game" data-game="roblox">
+        <div class="game-icon"><img src="assets/game/roblox.png" alt="Roblox"></div>
+        <div class="game-info">
+            <p class="game-name">Roblox</p>
+            <p class="game-publisher">Roblox Corporation</p>
+        </div>
+    </div>
+    <div class="card-game" data-game="pubg">
+        <div class="game-icon"><img src="assets/game/pubg.png" alt="PUBG"></div>
+        <div class="game-info">
+            <p class="game-name">PUBG</p>
+            <p class="game-publisher">Tencent</p>
+        </div>
+    </div>
+    
+    <div class="card-game" data-game="hok">
+        <div class="game-icon"><img src="assets/game/hok.png" alt="Honor of Kings"></div>
+        <div class="game-info">
+            <p class="game-name">Honor of Kings</p>
+            <p class="game-publisher">Tencent</p>
+        </div>
+    </div>
+
+    <div class="card-game" data-game="umamusume">
+        <div class="game-icon"><img src="assets/game/umamusume.png" alt="umamusume"></div>
+        <div class="game-info">
+            <p class="game-name">UmaMusume: Pretty Derby</p>
+            <p class="game-publisher">Cy Games</p>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+<section class="categories" id="categories">
+    <div class="category">
+        <button class="cat-btn" data-cat="game">Game</button>
+        <button class="cat-btn" data-cat="joki">Joki</button>
+        <button class="cat-btn" data-cat="voucher">Voucher</button>
+        <button class="cat-btn" data-cat="pulsa">Pulsa</button>
+        <button class="cat-btn" data-cat="Streaming">Streaming</button>
+    </div>
+    <div id="category-content">
+        <p>Pilih salah satu kategori di atas untuk melihat daftar.</p>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <!-- Kolom 1: Logo + deskripsi -->
+    <div class="footer-col">
+      <img src="assets/logo-footer.png" alt="AcumalakaStore Logo" height="50" class="footer-logo">
+      <p>
+        AcumalakaStore adalah platform tepercaya untuk kebutuhan top-up dan pembelian voucher digital berbagai game favorit. Nikmati kemudahan transaksi, dukungan pelanggan responsif, serta promo menarik setiap hari.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Peta Situs -->
+    <div class="footer-col">
+      <h4>PETA SITUS</h4>
+      <ul>
+        <li><a href="#">Masuk</a></li>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#categories">Semua Game</a></li>
+        <li><a href="Daftar Transaksi.html">Daftar Transaksi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Top Up Lainnya -->
+    <div class="footer-col">
+      <h4>TOP UP LAINNYA</h4>
+      <ul>
+        <li><a href="topup.html?game=ml">Mobile Legends</a></li>
+        <li><a href="topup.html?game=ff">Free Fire</a></li>
+        <li><a href="topup.html?game=pubg">Pubg Mobile</a></li>
+        <li><a href="topup.html?game=roblox">Roblox</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Ikuti Kami + Bantuan -->
+    <div class="footer-col">
+      <h4>IKUTI KAMI</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/agung_sulaiman1648/"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://discord.gg/FD4K4Gw3HT"><img src="assets/icons/discord.png" alt="Discord"></a>
+        <a href="https://www.youtube.com/@ZemonQu03"><img src="assets/icons/youtube.png" alt="Youtube"></a>
+      </div>
+      <h4>BANTUAN PELANGGAN</h4>
+      <a href="https://wa.me/6283837213836" target="_blank" class="btn-contact">
+      Hubungi Kami
+    </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AcumalakaStore. Hak Cipta &nbsp; <a href="about.html">Tentang Kami</a> | <a href="#">Syarat & Ketentuan Pengguna</a></p>
+  </div>
+</footer>
+
+<!-- Popup Music -->
+<div id="musicPopup" class="popup">
+  <h3 class="popup-title">Pemutar Musik</h3>
+
+  <div class="popup-section">
+    <label for="defaultMusicSelect">Pilih Musik</label>
+    <select id="defaultMusicSelect" class="popup-select">
+      <option value="assets/music/default1.mp3">Chill Vibes</option>
+      <option value="assets/music/default2.mp3">Action Mode</option>
+      <option value="assets/music/default3.mp3">Relax Beats</option>
+    </select>
+  </div>
+  <div class="music-controls">
+    <button id="playBtn" class="music-btn" title="Putar">
+      <i data-lucide="play"></i>
+    </button>
+    <button id="stopBtn" class="music-btn" title="Hentikan">
+      <i data-lucide="square"></i>
+    </button>
+  </div>
+
+  <audio id="bgMusic" loop></audio>
+</div>
+
+<!-- Popup User -->
+<div id="userPopup" class="popup">
+    <div id="loginForm">
+        <h3>Masuk Akun</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="logoutSection" style="display: none;">
+        <p>Halo, <span id="userDisplay"></span></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+</div>
+
+</body>
+</html>
