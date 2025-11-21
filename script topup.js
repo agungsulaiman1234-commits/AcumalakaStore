@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p><strong>Pembayaran:</strong> <span class="highlight">${orderData.payment}</span></p>
       </div>
       
-      <p class="instruction">Silakan lakukan pembayaran sesuai instruksi yang diberikan</p>
+      <p class="instruction">Silakan lakukan pembayaran sebelum waktu pembayaran habis</p>
       
       <button class="closePopup" onclick="closeTopupPopup()">Mengerti</button>
     `;
