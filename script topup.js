@@ -227,7 +227,7 @@ const games = {
     fields: ['User ID', 'Server'], 
     subtitle: 'Moonton • Topup Diamond', 
     nominal: [
-      {name:'Weekly Pass', price:'Rp28.000'},
+      {name:'Weekly Diamond Pass', price:'Rp28.000'},
       {name:'3 Diamond', price:'Rp1.500'},
       {name:'5 Diamond', price:'Rp1.800'},
       {name:'12 Diamond', price:'Rp4.000'},
